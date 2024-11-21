@@ -20,9 +20,9 @@
       theme: {
         extend: {
           colors: {
-            clifford: '#da373d',
-            primarybg: '#264653',
+            'clifford': '#da373d',
             'buttonbg': 'rgba(231, 111, 81, 1)',
+            'primary-bg': 'rgba(231, 111, 81, 0.1)',
           }
         }
       }
@@ -32,17 +32,16 @@
   <!-- Custom fons Styles -->
   <style>
     .poppins {
-      font-family: "Poppins", sans-serif;
-
+      font-family: 'Poppins', sans-serif;
     }
   </style>
 </head>
 
-<body class="poppins">
-  <header class="bg-primarybg py-4 relative flex flex-col justify-center items-center">
-    <nav class="md:container md:mx-auto">
-      <div class="navbar">
-        <div class="flex-1">
+<body class="poppins bg-white">
+  <header class=" py-4 relative flex flex-col justify-center items-center md:container mx-auto">
+    <nav class=" w-full md:mx-auto md:container">
+      <div class="navbar space-x-5 ">
+        <div class="flex-1 ">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-6" fill="none" viewBox="0 0 24 24"
@@ -51,17 +50,17 @@
               </svg>
             </div>
             <ul tabindex="0"
-              class="menu menu-lg dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow poppins text-white font-medium text-base">
+              class="menu menu-lg dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow poppins text-black font-medium text-base">
               <li><a>Home</a></li>
               <li><a>Shop</a></li>
               <li><a>News</a></li>
               <li><a>Contact</a></li>
             </ul>
           </div>
-          <a class="text-white text-3xl poppins font-semibold cursor-pointer" href="/">Biker Zone</a>
+          <a class="text-black text-4xl lg:text-3xl poppins font-semibold cursor-pointer" href="/">Biker Zone</a>
         </div>
         <div class="navbar-center hidden lg:flex ">
-          <ul class="menu menu-horizontal px-1 gap-4 text-white poppins font-medium text-base">
+          <ul class="menu menu-horizontal px-1 gap-4 text-black poppins font-medium text-base">
             <li><a>Home</a></li>
             <li><a>Shop</a></li>
             <li><a>News</a></li>
@@ -69,112 +68,101 @@
           </ul>
         </div>
         <div class="navbar-end w-auto">
-          <a class="btn bg-buttonbg hover:bg-buttonbg text-white text-base poppins font-medium">Login</a>
+          <a class="btn bg-buttonbg hover:bg-buttonbg text-white text-base poppins font-medium border-none">Login</a>
         </div>
       </div>
     </nav>
     <!-- Slider or Carosel -->
-    <div class=" carousel rounded-md bg-primarybg md:container md:mx-auto py-24 ">
-      <!-- Slide One -->
-      <div id="slide1" class="carousel-item relative w-full">
-        <div class="flex justify-between items-center px-6">
-          <div class="basis-3/5 space-y-2">
-            <p class="text-[#E0E0E0] font-light text-sm">Computer-controlled digital transistorized with electronic
-              advance
-            </p>
-            <h2 class="text-white font-extrabold poppins text-6xl">Honda CBR 300R</h2>
-            <p class="text-[#E0E0E0] font-light text-sm">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet
-              sint. Velit officia consequat duis
-              enim velit
-              mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+    <div class="carousel w-full bg-primary-bg h-[600px] md:h-[480px] rounded-lg">
+      <!-- Slider One -->
+      <div id="slide1" class="carousel-item relative w-full ">
+        <div class=" col md:flex p-5 md:p-20 gap-5 ">
+          <div class="space-y-4 flex-1">
+            <h2 class="text-4xl md:text-5xl font-bold poppins text-black">Ride-on R15 V4 <br>with Smile</h2>
+            <p class="text-lg text-black">Amet minim mollit non deserunt ullamco
+              est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
             <button
-              class="btn bg-buttonbg hover:bg-buttonbg text-white text-base poppins font-medium border-none px-4 py-3">Purchase</button>
+              class="btn bg-buttonbg hover:bg-buttonbg text-white text-base poppins font-medium border-none">Purchase</button>
           </div>
-          <div>
-            <img src="images/slider/bike1.png" class="w-full" />
+          <div class="flex-1">
+            <img src="images/slider/bike1.png" class="w-[400px]" />
+
           </div>
         </div>
         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide4" class="btn btn-circle bg-transparent text-white">❮</a>
-          <a href="#slide2" class="btn btn-circle bg-transparent text-white">❯</a>
+          <a href="#slide4"
+            class="btn bg-transparent border-none shadow-none hover:bg-transparent text-black text-2xl font-medium">❮</a>
+          <a href="#slide2"
+            class="btn bg-transparent border-none shadow-none hover:bg-transparent text-black text-2xl font-medium">❯</a>
         </div>
       </div>
-      <!-- Slide Two -->
+      <!-- Slider Two -->
       <div id="slide2" class="carousel-item relative w-full">
-        <div class="flex justify-between items-center px-6">
-          <div class="basis-3/5 space-y-2">
-            <p class="text-[#E0E0E0] font-light text-sm">Computer-controlled digital transistorized with electronic
-              advance
-            </p>
-            <h2 class="text-white font-extrabold poppins text-6xl">Honda CBR 300R</h2>
-            <p class="text-[#E0E0E0] font-light text-sm">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet
-              sint. Velit officia consequat duis
-              enim velit
-              mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <div class=" col md:flex p-5 md:p-20 gap-5 ">
+          <div class="space-y-4 flex-1">
+            <h2 class="text-4xl md:text-5xl font-bold poppins text-black">Ride-on R15 V4 <br>with Smile</h2>
+            <p class="text-lg text-black">Amet minim mollit non deserunt ullamco
+              est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
             <button
-              class="btn bg-buttonbg hover:bg-buttonbg text-white text-base poppins font-medium border-none px-4 py-3">Purchase</button>
+              class="btn bg-buttonbg hover:bg-buttonbg text-white text-base poppins font-medium border-none">Purchase</button>
           </div>
-          <div>
-            <img src="images/slider/bike2.png" class="w-full" />
+          <div class="flex-1">
+            <img src="images/slider/bike2.png" class="w-[400px]" />
+
           </div>
         </div>
         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide1" class="btn btn-circle bg-transparent text-white">❮</a>
-          <a href="#slide3" class="btn btn-circle bg-transparent text-white">❯</a>
+          <a href="#slide1"
+            class="btn bg-transparent border-none shadow-none hover:bg-transparent text-black text-2xl font-medium">❮</a>
+          <a href="#slide3"
+            class="btn bg-transparent border-none shadow-none hover:bg-transparent text-black text-2xl font-medium">❯</a>
         </div>
       </div>
       <!-- Slide Three -->
       <div id="slide3" class="carousel-item relative w-full">
-        <div class="flex justify-between items-center px-6">
-          <div class="basis-3/5 space-y-2">
-            <p class="text-[#E0E0E0] font-light text-sm">Computer-controlled digital transistorized with electronic
-              advance
-            </p>
-            <h2 class="text-white font-extrabold poppins text-6xl">Honda CBR 300R</h2>
-            <p class="text-[#E0E0E0] font-light text-sm">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet
-              sint. Velit officia consequat duis
-              enim velit
-              mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <div class=" col md:flex p-5 md:p-20 gap-5 ">
+          <div class="space-y-4 flex-1">
+            <h2 class="text-4xl md:text-5xl font-bold poppins text-black">Ride-on R15 V4 <br>with Smile</h2>
+            <p class="text-lg text-black">Amet minim mollit non deserunt ullamco
+              est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
             <button
-              class="btn bg-buttonbg hover:bg-buttonbg text-white text-base poppins font-medium border-none px-4 py-3">Purchase</button>
+              class="btn bg-buttonbg hover:bg-buttonbg text-white text-base poppins font-medium border-none">Purchase</button>
           </div>
-          <div>
-            <img src="images/slider/bike3.png" class="w-full" />
+          <div class="flex-1">
+            <img src="images/slider/bike3.png" class="w-[400px]" />
+
           </div>
         </div>
         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide2" class="btn btn-circle bg-transparent text-white">❮</a>
-          <a href="#slide4" class="btn btn-circle bg-transparent text-white">❯</a>
+          <a href="#slide2"
+            class="btn bg-transparent border-none shadow-none hover:bg-transparent text-black text-2xl font-medium">❮</a>
+          <a href="#slide4"
+            class="btn bg-transparent border-none shadow-none hover:bg-transparent text-black text-2xl font-medium">❯</a>
         </div>
       </div>
       <!-- Slide Four -->
       <div id="slide4" class="carousel-item relative w-full">
-        <div class="flex justify-between items-center px-6">
-          <div class="basis-3/5 space-y-2">
-            <p class="text-[#E0E0E0] font-light text-sm">Computer-controlled digital transistorized with electronic
-              advance
-            </p>
-            <h2 class="text-white font-extrabold poppins text-6xl">Honda CBR 300R</h2>
-            <p class="text-[#E0E0E0] font-light text-sm">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet
-              sint. Velit officia consequat duis
-              enim velit
-              mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <div class=" col md:flex p-5 md:p-20 gap-5 ">
+          <div class="space-y-4 flex-1">
+            <h2 class="text-4xl md:text-5xl font-bold poppins text-black">Ride-on R15 V4 <br>with Smile</h2>
+            <p class="text-lg text-black">Amet minim mollit non deserunt ullamco
+              est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
             <button
-              class="btn bg-buttonbg hover:bg-buttonbg text-white text-base poppins font-medium border-none px-4 py-3">Purchase</button>
+              class="btn bg-buttonbg hover:bg-buttonbg text-white text-base poppins font-medium border-none">Purchase</button>
           </div>
-          <div>
-            <img src="images/slider/bike4.png" class="w-full" />
+          <div class="flex-1">
+            <img src="images/slider/bike4.png" class="w-[400px]" />
+
           </div>
         </div>
         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide3" class="btn btn-circle bg-transparent text-white">❮</a>
-          <a href="#slide1" class="btn btn-circle bg-transparent bg-none text-white">❯</a>
+          <a href="#slide3"
+            class="btn bg-transparent border-none shadow-none hover:bg-transparent text-black text-2xl font-medium">❮</a>
+          <a href="#slide1"
+            class="btn bg-transparent border-none shadow-none hover:bg-transparent text-black text-2xl font-medium">❯</a>
         </div>
       </div>
+
     </div>
   </header>
   <main class="md:container md:mx-auto"></main>
