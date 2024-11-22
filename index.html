@@ -22,6 +22,7 @@
           colors: {
             'clifford': '#da373d',
             'buttonbg': 'rgba(231, 111, 81, 1)',
+            'textcolor': '#6C6C6C',
             'primary-bg': 'rgba(231, 111, 81, 0.1)',
           }
         }
@@ -73,7 +74,7 @@
       </div>
     </nav>
     <!-- Slider or Carosel -->
-    <div class="carousel w-full bg-primary-bg h-[600px] md:h-[480px] rounded-lg">
+    <div class="carousel w-full bg-primary-bg h-[650px] md:h-[480px] rounded-lg">
       <!-- Slider One -->
       <div id="slide1" class="carousel-item relative w-full ">
         <div class=" col md:flex p-5 md:p-20 gap-5 ">
@@ -165,7 +166,152 @@
 
     </div>
   </header>
-  <main class="md:container md:mx-auto"></main>
+  <main class="md:container md:mx-auto">
+    <!-- Features Bike-->
+    <section class="py-10">
+      <div class="text-center">
+        <h2 class="text-4xl text-black font-semibold text-center">Fetured Bikes In This Year</h2>
+        <h6 class="text-red-600 mb-1 mt-4">Best bike collection</h6>
+      </div>
+      <div class="w-8 h-[1px] bg-red-600 mx-auto mb-5"></div>
+      <div class="flex flex-col gap-5 md:flex-row justify-between px-2"><img src="/images/others/feature-bike.png"
+          alt="">
+        <img src="/images/others/feature-bike.png" alt="">
+        <img src="images/others/feature-bike.png" alt="">
+      </div>
+    </section>
+    <!-- Latest Bike News -->
+    <section class="py-10">
+      <h2 class="text-4xl text-black font-semibold text-center">latest News</h2>
+      <div class="flex flex-col md:flex-row gap-5 mt-5 px-2 md:px-0">
+        <!-- First Card -->
+        <div class="card bg-white drop-shadow-lg p-4 flex flex-col gap-3">
+          <figure class="">
+            <img src="/images/others/latest1.png" alt="bike" class="rounded-none w-full" />
+          </figure>
+          <div class="text-left px-0 pt-2 space-y-2">
+            <h3 class="card-title text-black text-2xl">Ducati XDIAVEL S-73!</h3>
+            <p class="text-textcolor">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet
+              faucibus sed id nisi
+              lectus at.</p>
+            <div class="card-actions">
+              <button
+                class="btn bg-buttonbg hover:bg-buttonbg text-white text-base poppins font-medium border-none">Read
+                More</button>
+            </div>
+          </div>
+        </div>
+        <!-- Second Card -->
+        <div class="card bg-white drop-shadow-lg p-4 flex flex-col gap-3">
+          <figure class="">
+            <img src="/images/others/latest2.png" alt="bike" class="rounded-none w-full" />
+          </figure>
+          <div class="text-left px-0 pt-2 space-y-2">
+            <h3 class="card-title text-black text-2xl">Motorcycles & Scooters</h3>
+            <p class="text-[#6C6C6C]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet
+              faucibus sed id nisi
+              lectus at.</p>
+            <div class="card-actions">
+              <button
+                class="btn bg-buttonbg hover:bg-buttonbg text-white text-base poppins font-medium border-none">Read
+                More</button>
+            </div>
+          </div>
+        </div>
+        <!-- Third Card -->
+        <div class="card bg-white drop-shadow-lg p-4 flex flex-col gap-3">
+          <figure class="">
+            <img src="/images/others/latest3.png" alt="bike" class="rounded-none w-full" />
+          </figure>
+          <div class="text-left px-0 pt-2 space-y-2">
+            <h3 class="card-title text-black text-2xl">2021 Honda CBR500R</h3>
+            <p class="text-[#6C6C6C]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet
+              faucibus sed id nisi
+              lectus at.</p>
+            <div class="card-actions">
+              <button
+                class="btn bg-buttonbg hover:bg-buttonbg text-white text-base poppins font-medium border-none">Read
+                More</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Testimonial Section -->
+    <section class="pb-8">
+      <h2 class="text-4xl text-black font-semibold text-center mb-6">Happy <span class="text-buttonbg">Clients
+          says</span>
+      </h2>
+      <div class="grid grid-cols-1 gap-5 px-2 md:px-0 md:grid-cols-3 ">
+
+        <!-- testimonial one -->
+        <div class="card bg-white drop-shadow-lg p-7 items-center">
+          <figure class="px-10 pt-10">
+            <img src="/images/others/user-1.png" alt="testimonial" class="w-36" />
+          </figure>
+          <div class="flex flex-col items-center text-center gap-4 pt-5">
+            <p class="text-textcolor">Slate helps you see how
+              many more days you need
+              to work to reach your financial
+              goal for the month and year.</p>
+            <div class="rating justify-center">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+            <h4 class="text-sm font-semibold text-info">Regina Miles</h4>
+            <h4 class="text-sm font-semibold text-black">Banker</h4>
+          </div>
+        </div>
+        <!-- testimonial two -->
+        <div class="card bg-white drop-shadow-lg p-7 items-center">
+          <figure class="px-10 pt-10">
+            <img src="/images/others/user-2.png" alt="testimonial" class="w-36" />
+          </figure>
+          <div class="flex flex-col items-center text-center gap-4 pt-5">
+            <p class="text-textcolor">Slate helps you see how
+              many more days you need
+              to work to reach your financial
+              goal for the month and year.</p>
+            <div class="rating justify-center">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+            </div>
+            <h4 class="text-sm font-semibold text-info">Regina Miles</h4>
+            <h4 class="text-sm font-semibold text-black">Banker</h4>
+          </div>
+        </div>
+        <!-- testimonial three -->
+        <div class="card bg-white drop-shadow-lg p-7 items-center">
+          <figure class="px-10 pt-10">
+            <img src="/images/others/user-3.png" alt="testimonial" class="w-36" />
+          </figure>
+          <div class="flex flex-col items-center text-center gap-4 pt-5">
+            <p class="text-textcolor">Slate helps you see how
+              many more days you need
+              to work to reach your financial
+              goal for the month and year.</p>
+            <div class="rating justify-center">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+            <h4 class="text-sm font-semibold text-info">Regina Miles</h4>
+            <h4 class="text-sm font-semibold text-black">Banker</h4>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
   <footer></footer>
 </body>
 
